@@ -1,9 +1,9 @@
-package com.cloudcart.cart.controller;
+﻿package com.fleetops.maintenance.controller;
 
-import com.cloudcart.cart.dto.TaskRequest;
-import com.cloudcart.cart.entity.MaintenanceQueue;
-import com.cloudcart.cart.entity.PendingTask;
-import com.cloudcart.cart.repository.MaintenanceQueueRepository;
+import com.fleetops.maintenance.dto.TaskRequest;
+import com.fleetops.maintenance.entity.MaintenanceQueue;
+import com.fleetops.maintenance.entity.PendingTask;
+import com.fleetops.maintenance.repository.MaintenanceQueueRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
@@ -73,3 +73,4 @@ public class TaskController {
         return ResponseEntity.ok(queueRepository.save(queue));
     }
 }
+

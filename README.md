@@ -1,21 +1,21 @@
-# 🛒 CloudCart Cart Service
+﻿# ðŸ›’ FleetOps Cart Service
 
-The Shopping Cart service for the CloudCart E-commerce platform. It manages persistent, per-user shopping carts.
+The Shopping Cart service for the FleetOps E-commerce platform. It manages persistent, per-user shopping carts.
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 *   **Framework:** Spring Boot 3.4
 *   **Database:** PostgreSQL (uses `cart_db`)
 *   **ORM:** Spring Data JPA / Hibernate
 *   **Security:** JWT Validation (Stateless)
 
-## 🎯 Responsibilities
+## ðŸŽ¯ Responsibilities
 *   **Cart Persistence:** Stores cart items (`productId` and `quantity`) linked to the authenticated user's username.
 *   **Item Management:** Allows users to add items to their cart.
 *   **Cart Lifecycle:** The cart is designed to be cleared automatically by the Order Service upon successful checkout.
 
 *Note: This service only stores references to products (`productId`). Full product details are fetched on demand by the frontend or order service.*
 
-## 📡 API Endpoints
+## ðŸ“¡ API Endpoints
 
 | Method | Endpoint | Auth Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -23,7 +23,7 @@ The Shopping Cart service for the CloudCart E-commerce platform. It manages pers
 | `POST` | `/cart/add` | Yes (JWT) | Add an item to the cart (`productId`, `quantity`) |
 | `DELETE` | `/cart/clear` | Yes (JWT) | Empty the current user's cart |
 
-## 🚀 Running Locally
+## ðŸš€ Running Locally
 
 ### Prerequisites
 *   Java 17+
@@ -38,8 +38,9 @@ export JWT_SECRET=your-super-secret-key-minimum-32-chars
 mvn spring-boot:run
 ```
 
-## 🐳 Docker
+## ðŸ³ Docker
 
 ```bash
-docker build -t cloudcart-cart-service:v1.0.0 .
+docker build -t fleetops-maintenance-service:v1.0.0 .
 ```
+

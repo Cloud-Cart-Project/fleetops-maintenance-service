@@ -1,4 +1,4 @@
-package com.cloudcart.cart.dto;
+﻿package com.fleetops.maintenance.dto;
 
 public class TaskRequest {
     private Long vehicleId;
@@ -14,3 +14,4 @@ public class TaskRequest {
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 }
+

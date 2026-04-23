@@ -1,4 +1,4 @@
-package com.cloudcart.cart.entity;
+﻿package com.fleetops.maintenance.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -40,3 +40,4 @@ public class PendingTask {
     public MaintenanceQueue getQueue() { return queue; }
     public void setQueue(MaintenanceQueue queue) { this.queue = queue; }
 }
+

@@ -1,4 +1,4 @@
-package com.cloudcart.cart.entity;
+﻿package com.fleetops.maintenance.entity;
 
 import jakarta.persistence.*;
 import java.util.ArrayList;
@@ -27,3 +27,4 @@ public class MaintenanceQueue {
     public List<PendingTask> getTasks() { return tasks; }
     public void setTasks(List<PendingTask> tasks) { this.tasks = tasks; }
 }
+
